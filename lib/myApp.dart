@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/core/app_theme.dart';
 import 'package:todo/ui/screens/home.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
       routes: {
         Home.routeName:(_)=>Home()
       },
